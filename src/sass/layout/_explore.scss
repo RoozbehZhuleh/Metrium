@@ -1,0 +1,81 @@
+.explore{
+    margin-top: 4rem;
+    @include flex(column, center, center);
+    gap: 3rem;
+
+    &__title{
+        @include flex(row, space-between, center);
+        width: 90%;
+
+        button{
+            @include flex(row, center, center);
+            gap: 1rem;
+            background: none;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .explore-card{
+        width: 15rem;
+        height: 40rem;
+        border: 1px solid $dark-color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: $br-l;
+    }
+    .explore-card-1{
+        background-image: url(../../assets/home4.jpeg);
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            background-color: rgba(59, 59, 59, 0.485);
+            bottom: 1%;
+            left: 0;
+            border-radius: $br-l;
+        }
+
+    
+    }
+    .explore-card-2{
+       background-image: url(../../assets/home3.jpeg);
+    }
+    .explore-card-3{
+        background-image: url(../../assets/home4.jpeg);
+    }
+    .explore-card-4{
+        background-image: url(../../assets/home1.jpeg);
+    }
+    .explore-card-5{
+        background-image: url(../../assets/home2.jpeg);
+    }
+
+
+
+}
+
+.swiper{
+    height: 45vh;
+    width: 90%;
+}
+
+.swiper-button-next{
+    color: $light-color;
+    background-color: $light-color;
+    padding: 3rem;
+    border-radius: 100%;
+    transform: scale(0.7);
+    left: -15rem;
+}
+.swiper-button-prev{
+    color: $light-color;
+    background-color: $light-color;
+    padding: 3rem;
+    border-radius: 100%;
+    transform: scale(0.7);
+}

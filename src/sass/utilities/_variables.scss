@@ -1,35 +1,30 @@
 @use "sass:map";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Square+Peg&display=swap");
 
-$primary-color: #fff5f5;
-$secondary-color: rgb(16, 40, 81);
-$third-color: rgb(220, 233, 255);
-$fourth-color: rgb(106, 149, 222);
-$accent-color: rgb(16, 40, 81);
+$primary-color: #F1F1F1;
+$secondary-color: #000000;
+$third-color: #00E776;
+$fourth-color: #7D7D7D;
 $light-color: #ffffff;
-$dark-color: #181131;
-$font-color: (
-  "primary": rgb(16, 40, 81),
-  "secondary": #f7f7f7,
-  "other": rgb(154, 161, 170),
-);
-$border-radius: (
-  "s": 0.5rem,
-  "m": 1rem,
-  "l": 1.5rem,
-);
-$font-size: (
-  "s": 1rem,
-  "m": 1.4rem,
-  "ml": 1.8rem,
-  "l": 2rem,
-  "xl": 3rem,
-  "2xl": 4rem,
-  "3xl": 5rem,
-);
-$font-weight: (
-  "thin": 300,
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
+$dark-color: #070707;
+
+$fc-primary: #000000;
+$fc-secondary: #ffffff;
+$fc-third: #7D7D7D;
+
+$br-s: 0.5rem;
+$br-m: 1rem;
+$br-l: 1.5rem;
+
+$fs-s: 1rem;
+$fs-sm: 1.3rem;
+$fs-m: 1.6rem;
+$fs-ml: 2rem;
+$fs-l: 3rem;
+$fs-xl: 4rem;
+$fs-xxl: 6rem;
+
+$fw-thin: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

@@ -6,35 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Test</title>
-    <link rel="stylesheet" href="./css/wecare.css">
+    <link rel="stylesheet" href="./css/DesignTest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <script src="./scripts/swiper.js" defer></script>
     <script src="./scripts/style.js" defer></script>
 </head>
 
 <body>
 <header id="header">
-    <nav id="nav">
-        <div class="container">
-            <div class="aprt1">
-
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__logo">
+                <i class="fa-solid fa-house"></i>
+                <h2>Metrium</h2>
             </div>
-        </div>
-    </nav>
+            <div class="nav__buttons">
+                <button class="nav__buttons__support">Support</button>
+                <button class="nav__buttons__language">Language</button>
+                <button class="nav__buttons__property">List your property</button>
+            </div>
+            <div class="nav__notif">
+                <i class="nav__notif__bell fa-solid fa-bell"></i>
+                <i class="nav__notif__profile fa-solid fa-user"></i>
+            </div>
+        </nav>
+    </div>
 </header>
 <main id="main">
-    <div class="hero">
-        <div class="container">
-            <p>hello</p>
+    <div class="container">
+        <div class="hero">
+            <div class="hero__wrapper">
+                <div class="hero__text">
+                    <div class="hero__text__title">
+                        <h1>Modern <br> House</h1>
+                        <p>3 bedrooms, 1 kitchen, 2 bathrooms</p>
+                    </div>
+                    <div class="hero__text__weather">
+                        <p>-2 C</p>
+                        <p>very cold</p>
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="hero__images">
+                    <img src="./assets/home2.jpeg" alt="">
+                    <img src="./assets/home3.jpeg" alt="">
+                    <img src="./assets/home4.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="searchbar__categories">
+            <div class="searchbar__categories__stays">
+                <i class="fa-solid fa-house"></i><h2>Stays</h2>
+            </div>
+            <div class="searchbar__categories__ratings">
+                <i class="fa-solid fa-star"></i><h2>Ratings</h2>
+            </div>
+            <div class="searchbar__categories__facilities">
+                <i class="fa-solid fa-tv"></i><h2>Facilities</h2>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="searchbar__items">
+                <div class="searchbar__city">
+                    <p>city</p>
+                    <h2>Los Angeles</h2>
+                    <p>United States</p>
+                </div>
+                <div class="searchbar__tenants">
+                    <p>tenants</p>
+                    <h2>4 people</h2>
+                    <div class="searchbar__tenants__buttons">
+                        <button>Less</button>
+                        <button>More</button>
+                    </div>
+                </div>
+                <div class="searchbar__check">
+                    <div class="searchbar__checkin">
+                        <p>Check In</p>
+                        <div class="searchbar__checkin__date">
+                           <h2>Fri, 14 Jan</h2><i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="searchbar__checkin__buttons">
+                            <button>Prev</button>
+                            <button>Next</button>
+                        </div>
+                    </div>
+                    <div class="searchbar__checkout">
+                        <p>Check out</p>
+                        <div class="searchbar__checkout__date">
+                            <h2>Mon, 14 Feb</h2><i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="searchbar__checkout__buttons">
+                            <button>Prev</button>
+                            <button>Next</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="searchbar__button">
+                <button><p>Search Stays</p><i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
         </div>
     </div>
-</main>
-<footer id="footer">
-    <div class="container">
+    <div class="explore">
+        <div class="explore__title">
+            <h2>Explore More Houses</h2>
+            <button><p>See All</p><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+        
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide explore-card explore-card-1"></div>
+                <div class="swiper-slide explore-card explore-card-2"></div>
+                <div class="swiper-slide explore-card explore-card-3"></div>
+                <div class="swiper-slide explore-card explore-card-4"></div>
+                <div class="swiper-slide explore-card explore-card-5"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
 
     </div>
-</footer>
+</main>
 </body>
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </html>

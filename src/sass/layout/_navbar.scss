@@ -1,1 +1,113 @@
-@import "../utilities/utilities";
+// @import "../utilities/utilities";
+
+.nav{
+    @include grid(repeat(10, 1fr), repeat(1, 1fr));
+    padding-top: 2rem;
+
+    &__logo{
+        grid-column: 1/2;
+        @include flex(row, flex-start,center);
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    &__buttons{
+        grid-column: 5/10;
+        @include flex(row, flex-start,center);
+        gap: 2rem;
+        
+        &__support{
+            
+            position: relative;
+            font-size: $fs-m;
+            border:none;
+            outline: none;
+            background: none;
+
+            &::after{
+                position: absolute;
+                content:"";
+                width: 100%;
+                height: 2px;
+                background-color:$secondary-color;
+                top: 99%;
+                left: 2%;
+                transform: scale(0);
+                transition: all 0.2s linear;
+
+            }
+
+            &:hover::after{
+                transform: scale(1);
+
+            }
+        }
+        &__language{
+            position: relative;
+            font-size: $fs-m;
+            border:none;
+            outline: none;
+            background: none;
+
+             &::after{
+                position: absolute;
+                content:"";
+                width: 100%;
+                height: 2px;
+                background-color:$secondary-color;
+                top: 99%;
+                left: 2%;
+                transform: scale(0);
+                transition: all 0.2s linear;
+
+            }
+
+            &:hover::after{
+                transform: scale(1);
+
+            }
+        }
+
+        &__property{
+            position: relative;
+            font-size: $fs-m;
+            border:none;
+            outline: none;
+            background: none;
+
+            &::after{
+                position: absolute;
+                content:"";
+                width: 100%;
+                height: 2px;
+                background-color:$secondary-color;
+                top: 99%;
+                left: 2%;
+                transform: scale(0);
+                transition: all 0.2s linear;
+
+            }
+
+            &:hover::after{
+                transform: scale(1);
+
+            }
+        }
+        
+    }
+
+    &__notif{
+
+        @include flex(row, flex-start,center);
+        gap: 1rem;
+        grid-column:10/12;
+        &__bell{
+            color: $fc-third;
+            cursor: pointer;
+        }
+        &__profile{
+            color: $fc-third;
+            cursor: pointer;
+        }
+    }
+}
